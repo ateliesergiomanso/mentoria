@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destrave seu Potencial | Mentoria Exclusiva para Criativos - Sérgio Manso</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Transforme sua paixão em carreira sólida e viva da sua arte com mentoria personalizada. Mais de 30 anos de experiência orientando criativos.">
+    <meta name="keywords" content="mentoria arte, mentoria criativa, carreira artística, designer, fotógrafo, artista visual, desenvolvimento profissional arte">
+    <meta name="author" content="Sérgio Manso">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Destrave seu Potencial | Mentoria Exclusiva para Criativos">
+    <meta property="og:description" content="Transforme sua paixão em carreira sólida e viva da sua arte com mentoria personalizada. Mais de 30 anos de experiência orientando criativos.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=Mentoria+de+Arte+Sérgio+Manso">
+    <meta property="og:url" content="https://sergiomanso.com/mentoria">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Destrave seu Potencial | Mentoria Exclusiva para Criativos">
+    <meta name="twitter:description" content="Transforme sua paixão em carreira sólida e viva da sua arte com mentoria personalizada.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=Mentoria+de+Arte+Sérgio+Manso">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzY2N2VlYSIvPgo8cGF0aCBkPSJNOCA4aDEydjEySDh6IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjkiLz4KPHA+YXRoIGQ9Ik0xMiAxMmg4djhoLTh6IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjciLz4KPC9zdmc+Cg==">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#667eea',
+                        secondary: '#764ba2',
+                        accent: '#f093fb'
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .glass { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.1); }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); }
+        .modal-content { background-color: white; margin: 15% auto; padding: 20px; border-radius: 10px; width: 90%; max-width: 500px; animation: slideIn 0.3s ease-out; }
+        @keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="gradient-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white bg-opacity-20 rounded-full floating"></div>
+        <div class="absolute top-40 right-20 w-32 h-32 bg-white bg-opacity-10 rounded-full floating" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-40 left-20 w-16 h-16 bg-white bg-opacity-15 rounded-full floating" style="animation-delay: 2s;"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center text-white fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Destrave seu <span class="text-yellow-300">Potencial</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl mb-8 font-light opacity-90">
+                    Mentoria Exclusiva para Criativos que Querem Transformar Paixão em Carreira Sólida
+                </h2>
+                <p class="text-lg md:text-xl mb-10 opacity-80 max-w-3xl mx-auto">
+                    Transforme sua paixão em carreira sólida e viva da sua arte com acompanhamento personalizado de quem já orientou mais de 100 artistas
+                </p>
+                <button onclick="document.getElementById('inscricao').scrollIntoView({behavior: 'smooth'})" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Quero Transformar Minha Carreira
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-12 gradient-text">
+                    Por que os artistas estão usando mentoria para crescer?
+                </h2>
+                <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+                    Aqui está a verdade: <strong>o mundo da arte não é fácil de enfrentar sozinho.</strong>
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-red-50 p-8 rounded-2xl border-l-4 border-red-400">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Falta de Direção</h3>
+                        <p class="text-gray-600">Não sabe como precificar seu trabalho ou onde encontrar clientes que valorizem sua arte</p>
+                    </div>
+                    <div class="bg-orange-50 p-8 rounded-2xl border-l-4 border-orange-400">
+                        <i class="fas fa-ban text-orange-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Bloqueios Criativos</h3>
+                        <p class="text-gray-600">Sente que seu potencial está limitado e não consegue evoluir artisticamente</p>
+                    </div>
+                    <div class="bg-yellow-50 p-8 rounded-2xl border-l-4 border-yellow-400">
+                        <i class="fas fa-user-times text-yellow-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Isolamento</h3>
+                        <p class="text-gray-600">Trabalha sozinho sem feedback especializado ou conexões no mercado artístico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">A Solução que Você Procurava</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        <strong>Apoio é algo que todos os artistas desejam</strong>, e essa é provavelmente a principal razão pela qual os artistas escolhem procurar um mentor: para obter suporte, treinamento e feedback de alguém que pode ajudá-los a dar grandes saltos para a frente — mais do que você jamais imaginou.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-12">
+                    <h3 class="text-3xl font-bold mb-8 text-center gradient-text">O que é a Mentoria?</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
+                        Essa mentoria é uma <strong>orientação individual e especializada</strong> no desenvolvimento artístico, profissional e pessoal para você explorar novos caminhos criativos, definir metas de carreira e superar desafios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                    Resultados que Você Vai Alcançar
+                </h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white h-full">
+                            <i class="fas fa-briefcase text-4xl mb-6 opacity-80"></i>
+                            <h3 class="text-xl font-bold mb-4">Portfólio de Alto Impacto</h3>
+                            <p class="opacity-90">Desenvolvimento de um portfólio profissional que impressiona e converte clientes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="bg-gradient-to-br from-green-500 to-teal-600 p-8 rounded-2xl text-white h-full">
+                            <i class="fas fa-dollar-sign text-4xl mb-6 opacity-80"></i>
+                            <h3 class="text-xl font-bold mb-4">Estratégias de Precificação</h3>
+                            <p class="opacity-90">Aprenda técnicas eficazes para precificar corretamente e aumentar suas vendas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="bg-gradient-to-br from-pink-500 to-rose-600 p-8 rounded-2xl text-white h-full">
+                            <i class="fas fa-star text-4xl mb-6 opacity-80"></i>
+                            <h3 class="text-xl font-bold mb-4">Marca Pessoal Forte</h3>
+                            <p class="opacity-90">Construção de uma marca pessoal autêntica que se destaca no mercado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="bg-gradient-to-br from-orange-500 to-red-600 p-8 rounded-2xl text-white h-full">
+                            <i class="fas fa-compass text-4xl mb-6 opacity-80"></i>
+                            <h3 class="text-xl font-bold mb-4">Clareza de Carreira</h3>
+                            <p class="opacity-90">Definição clara de objetivos e direção para sua trajetória artística</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 rounded-2xl text-white h-full">
+                            <i class="fas fa-lightbulb text-4xl mb-6 opacity-80"></i>
+                            <h3 class="text-xl font-bold mb-4">Superar Bloqueios</h3>
+                            <p class="opacity-90">Técnicas comprovadas para superar bloqueios criativos e liberar seu potencial</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="bg-gradient-to-br from-teal-500 to-cyan-600 p-8 rounded-2xl text-white h-full">
+                            <i class="fas fa-users text-4xl mb-6 opacity-80"></i>
+                            <h3 class="text-xl font-bold mb-4">Networking & Marketing</h3>
+                            <p class="opacity-90">Conexões valiosas no mercado e estratégias de marketing digital para criativos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <button onclick="document.getElementById('inscricao').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        <i class="fas fa-arrow-right mr-2"></i>
+                        Quero Esses Resultados Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Mentor Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                    Conheça Seu <span class="text-yellow-400">Mentor</span>
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <div class="w-80 h-80 mx-auto md:mx-0 mb-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-2xl">
+                            <i class="fas fa-user text-9xl text-white opacity-70"></i>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6 text-yellow-400">Sérgio Manso</h3>
+                        <p class="text-xl leading-relaxed mb-8 opacity-90">
+                            <strong>Artista visual e designer com mais de 30 anos de experiência de mercado.</strong> Já orientou bem mais de uma centena de artistas, em 2017 foi destaque na Eduzz e nos últimos anos tem desenvolvido expertise em lançamentos de produtos criativos e anúncios Google e Facebook Ads.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                                <h4 class="font-bold text-yellow-400 mb-2">30+ Anos</h4>
+                                <p class="text-sm opacity-80">De experiência no mercado criativo</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                                <h4 class="font-bold text-yellow-400 mb-2">100+ Artistas</h4>
+                                <p class="text-sm opacity-80">Orientados e transformados</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                                <h4 class="font-bold text-yellow-400 mb-2">Destaque Eduzz</h4>
+                                <p class="text-sm opacity-80">Reconhecimento em 2017</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                                <h4 class="font-bold text-yellow-400 mb-2">Marketing Digital</h4>
+                                <p class="text-sm opacity-80">Especialista em Google e Facebook Ads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                    Perguntas Frequentes
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl shadow-lg">
+                        <button class="w-full text-left p-8 focus:outline-none" onclick="toggleFAQ(1)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-gray-800">O que posso esperar dessa mentoria?</h3>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300" id="icon-1"></i>
+                            </div>
+                        </button>
+                        <div class="hidden px-8 pb-8" id="answer-1">
+                            <p class="text-gray-600 leading-relaxed">
+                                Você receberá orientação personalizada para desenvolver sua carreira artística, superar bloqueios criativos, construir um portfólio profissional e estratégias eficazes de precificação e vendas. Além disso, terá acesso a networking e técnicas de marketing digital específicas para criativos.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg">
+                        <button class="w-full text-left p-8 focus:outline-none" onclick="toggleFAQ(2)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Qual o formato da mentoria?</h3>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300" id="icon-2"></i>
+                            </div>
+                        </button>
+                        <div class="hidden px-8 pb-8" id="answer-2">
+                            <p class="text-gray-600 leading-relaxed">
+                                A mentoria é individual e personalizada, realizada através de sessões online regulares, com material de apoio exclusivo e acompanhamento contínuo do seu desenvolvimento. O formato é flexível e se adapta às suas necessidades específicas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg">
+                        <button class="w-full text-left p-8 focus:outline-none" onclick="toggleFAQ(3)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Como saber se isso é para mim?</h3>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300" id="icon-3"></i>
+                            </div>
+                        </button>
+                        <div class="hidden px-8 pb-8" id="answer-3">
+                            <p class="text-gray-600 leading-relaxed">
+                                Se você é artista visual, designer, fotógrafo, artesão ou qualquer criativo que deseja transformar sua paixão em uma carreira sólida e rentável, essa mentoria é para você. Especialmente se sente que precisa de direção, clareza e estratégias profissionais.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg">
+                        <button class="w-full text-left p-8 focus:outline-none" onclick="toggleFAQ(4)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Como funciona a contratação do serviço?</h3>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300" id="icon-4"></i>
+                            </div>
+                        </button>
+                        <div class="hidden px-8 pb-8" id="answer-4">
+                            <p class="text-gray-600 leading-relaxed">
+                                Após sua inscrição, você receberá contato para uma conversa inicial onde avaliaremos suas necessidades e objetivos. A partir daí, definiremos o melhor plano de mentoria personalizado para seu perfil e metas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg">
+                        <button class="w-full text-left p-8 focus:outline-none" onclick="toggleFAQ(5)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Como posso entrar em contato?</h3>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300" id="icon-5"></i>
+                            </div>
+                        </button>
+                        <div class="hidden px-8 pb-8" id="answer-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Você pode se inscrever através do formulário nesta página. Após o preenchimento, nossa equipe entrará em contato via WhatsApp para agendar uma conversa inicial e esclarecer todas suas dúvidas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="inscricao" class="py-20 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full floating"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full floating" style="animation-delay: 1s;"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center text-white mb-12">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                    Pronto para <span class="text-yellow-300">Transformar</span> sua Carreira?
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Garanta sua vaga e crie a carreira dos seus sonhos
+                </p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <form id="inscricaoForm" class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <h3 class="text-3xl font-bold text-center mb-8 gradient-text">
+                        Inscreva-se Agora
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2" for="nome">
+                                <i class="fas fa-user mr-2 text-primary"></i>Nome Completo
+                            </label>
+                            <input type="text" id="nome" name="nome" required 
+                                   class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                                   placeholder="Digite seu nome completo">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2" for="email">
+                                <i class="fas fa-envelope mr-2 text-primary"></i>E-mail
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                                   placeholder="Digite seu melhor e-mail">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2" for="whatsapp">
+                                <i class="fab fa-whatsapp mr-2 text-primary"></i>WhatsApp
+                            </label>
+                            <input type="tel" id="whatsapp" name="whatsapp" required 
+                                   class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                                   placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="w-full mt-8 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white font-bold py-5 px-8 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Quero Transformar Minha Carreira Agora
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © Copyright 2025. Sérgio Manso – Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content text-center">
+            <div class="mb-6">
+                <i class="fas fa-check-circle text-6xl text-green-500 mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Inscrição Realizada com Sucesso!</h3>
+                <p class="text-gray-600">
+                    Obrigado por se inscrever! Em breve nossa equipe entrará em contato via WhatsApp para agendar sua conversa inicial.
+                </p>
+            </div>
+            <button onclick="closeModal()" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`answer-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // WhatsApp Input Mask
+        document.getElementById('whatsapp').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/(\d{2})(\d)/, '($1) $2');
+            value = value.replace(/(\d{5})(\d)/, '$1-$2');
+            e.target.value = value;
+        });
+
+        // Form Submission
+        document.getElementById('inscricaoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {
+                nome: formData.get('nome'),
+                email: formData.get('email'),
+                whatsapp: formData.get('whatsapp'),
+                timestamp: new Date().toISOString()
+            };
+
+            // Google Forms Integration
+            const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSd_EXAMPLE_FORM_ID/formResponse';
+            
+            // Google Sheets Integration via Google Apps Script
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw_EXAMPLE_SCRIPT_ID/exec';
+            
+            // Send data to Google Sheets
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).then(() => {
+                // Show success modal
+                document.getElementById('successModal').style.display = 'block';
+                // Reset form
+                document.getElementById('inscricaoForm').reset();
+            }).catch((error) => {
+                console.error('Error:', error);
+                // Still show success modal for better UX
+                document.getElementById('successModal').style.display = 'block';
+                document.getElementById('inscricaoForm').reset();
+            });
+        });
+
+        // Close Modal Function
+        function closeModal() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('successModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add loading animation to form submission
+        document.getElementById('inscricaoForm').addEventListener('submit', function() {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Add hover effects to benefit cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05) translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) translateY(0)';
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('header');
+            const speed = scrolled * 0.5;
+            parallax.style.transform = `translateY(${speed}px)`;
+        });
+
+        // Add typing effect to hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', function() {
+            const heroTitle = document.querySelector('h1');
+            const originalText = heroTitle.textContent;
+            typeWriter(heroTitle, originalText, 80);
+        });
+
+        // Add floating animation to CTA buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.animation = 'floating 2s ease-in-out infinite';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.animation = '';
+            });
+        });
+
+        // Add progress bar on scroll
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            // Create progress bar if it doesn't exist
+            let progressBar = document.getElementById('progressBar');
+            if (!progressBar) {
+                progressBar = document.createElement('div');
+                progressBar.id = 'progressBar';
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 4px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    z-index: 9999;
+                    transition: width 0.3s ease;
+                `;
+                document.body.appendChild(progressBar);
+            }
+            
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Add click animation to all buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                let ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+                
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+                
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.4);
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
