@@ -96,13 +96,13 @@
         </div>
         
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce cursor-pointer z-20" onclick="document.querySelector('#problem-section').scrollIntoView({behavior: 'smooth'})">
             <i class="fas fa-chevron-down text-2xl"></i>
         </div>
     </header>
 
     <!-- Problem Section -->
-    <section class="py-20 bg-white">
+    <section id="problem-section" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-4xl md:text-5xl font-bold mb-12 gradient-text">
@@ -162,52 +162,72 @@
                     Resultados que Você Vai Alcançar
                 </h2>
                 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
-                        <div class="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white h-full">
-                            <i class="fas fa-briefcase text-4xl mb-6 opacity-80"></i>
-                            <h3 class="text-xl font-bold mb-4">Portfólio de Alto Impacto</h3>
-                            <p class="opacity-90">Desenvolvimento de um portfólio profissional que impressiona e converte clientes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
-                        <div class="bg-gradient-to-br from-green-500 to-teal-600 p-8 rounded-2xl text-white h-full">
-                            <i class="fas fa-dollar-sign text-4xl mb-6 opacity-80"></i>
-                            <h3 class="text-xl font-bold mb-4">Estratégias de Precificação</h3>
-                            <p class="opacity-90">Aprenda técnicas eficazes para precificar corretamente e aumentar suas vendas</p>
-                        </div>
-                    </div>
-                    
-                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
-                        <div class="bg-gradient-to-br from-pink-500 to-rose-600 p-8 rounded-2xl text-white h-full">
-                            <i class="fas fa-star text-4xl mb-6 opacity-80"></i>
-                            <h3 class="text-xl font-bold mb-4">Marca Pessoal Forte</h3>
-                            <p class="opacity-90">Construção de uma marca pessoal autêntica que se destaca no mercado</p>
-                        </div>
-                    </div>
-                    
-                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
-                        <div class="bg-gradient-to-br from-orange-500 to-red-600 p-8 rounded-2xl text-white h-full">
-                            <i class="fas fa-compass text-4xl mb-6 opacity-80"></i>
-                            <h3 class="text-xl font-bold mb-4">Clareza de Carreira</h3>
-                            <p class="opacity-90">Definição clara de objetivos e direção para sua trajetória artística</p>
-                        </div>
-                    </div>
-                    
-                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
-                        <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 rounded-2xl text-white h-full">
-                            <i class="fas fa-lightbulb text-4xl mb-6 opacity-80"></i>
-                            <h3 class="text-xl font-bold mb-4">Superar Bloqueios</h3>
-                            <p class="opacity-90">Técnicas comprovadas para superar bloqueios criativos e liberar seu potencial</p>
-                        </div>
-                    </div>
-                    
-                    <div class="group hover:transform hover:scale-105 transition-all duration-300">
-                        <div class="bg-gradient-to-br from-teal-500 to-cyan-600 p-8 rounded-2xl text-white h-full">
-                            <i class="fas fa-users text-4xl mb-6 opacity-80"></i>
-                            <h3 class="text-xl font-bold mb-4">Networking & Marketing</h3>
-                            <p class="opacity-90">Conexões valiosas no mercado e estratégias de marketing digital para criativos</p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-briefcase text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Portfólio de Alto Impacto</h3>
+                                        <p class="text-gray-600">Desenvolvimento de um portfólio profissional que impressiona e converte clientes</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-dollar-sign text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Estratégias de Precificação</h3>
+                                        <p class="text-gray-600">Aprenda técnicas eficazes para precificar corretamente e aumentar suas vendas</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-star text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Marca Pessoal Forte</h3>
+                                        <p class="text-gray-600">Construção de uma marca pessoal autêntica que se destaca no mercado</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-compass text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Clareza de Carreira</h3>
+                                        <p class="text-gray-600">Definição clara de objetivos e direção para sua trajetória artística</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-lightbulb text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Superar Bloqueios</h3>
+                                        <p class="text-gray-600">Técnicas comprovadas para superar bloqueios criativos e liberar seu potencial</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-users text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Networking & Marketing</h3>
+                                        <p class="text-gray-600">Conexões valiosas no mercado e estratégias de marketing digital para criativos</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -567,12 +587,14 @@
             });
         });
 
-        // Parallax effect for hero section
+        // Parallax effect for hero section (menos intenso)
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const parallax = document.querySelector('header');
-            const speed = scrolled * 0.5;
-            parallax.style.transform = `translateY(${speed}px)`;
+            if (parallax && scrolled < window.innerHeight) {
+                const speed = scrolled * 0.2;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
         });
 
         // Add typing effect to hero title
