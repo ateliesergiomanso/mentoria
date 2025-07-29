@@ -450,50 +450,16 @@
             e.target.value = value;
         });
 
-       // Form Submission - VERSÃO MELHORADA
+        // Form Submission
         document.getElementById('inscricaoForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            // Validação dos campos
-            const nome = document.getElementById('nome').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const whatsapp = document.getElementById('whatsapp').value.trim();
-            
-            if (!nome || !email || !whatsapp) {
-                alert('Por favor, preencha todos os campos obrigatórios.');
-                return;
-            }
-            
-            // Validação de email
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Por favor, insira um email válido.');
-                return;
-            }
-            
-            // Validação de WhatsApp (mínimo 10 dígitos)
-            const whatsappClean = whatsapp.replace(/\D/g, '');
-            if (whatsappClean.length < 10) {
-                alert('Por favor, insira um número de WhatsApp válido.');
-                return;
-            }
-            
-            // Loading state
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
-            submitBtn.disabled = true;
-            
-            const formData = {
-                nome: nome,
-                email: email,
-                whatsapp: whatsapp,
-                timestamp: new Date().toISOString(),
-                data_formatada: new Date().toLocaleDateString('pt-BR'),
-                hora_formatada: new Date().toLocaleTimeString('pt-BR'),
-                origem: 'Landing Page Mentoria',
-                status: 'Novo Lead'
+            const formData = new FormData(this);
+            const data = {
+                nome: formData.get('nome'),
+                email: formData.get('email'),
+                whatsapp: formData.get('whatsapp'),
+                timestamp: new Date().toISOString()
             };
 
             // Google Forms Integration
