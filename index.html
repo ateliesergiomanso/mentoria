@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -451,31 +452,6 @@
                 whatsapp: formData.get('whatsapp'),
                 timestamp: new Date().toISOString()
             };
-            // Form Submission with Google Sheets Integration
-        document.getElementById('accessForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            // Show loading state
-            submitButton.textContent = 'Processando...';
-            submitButton.disabled = true;
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const whatsapp = document.getElementById('whatsapp').value;
-            
-            if (name && email && whatsapp) {
-                const userData = {
-                    name: name,
-                    email: email,
-                    whatsapp: whatsapp,
-                    timestamp: new Date().toLocaleString('pt-BR'),
-                    source: 'Landing Page - Catálogo Arte'
-                };
-                
-                try {
 
             // Google Forms Integration
             const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1jrx2liy2AgFcj0P2wbyjEmBSUWkamBMi2Mc8XqsOFNA/formResponse';
