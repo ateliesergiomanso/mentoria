@@ -448,10 +448,11 @@
             
             const formData = new FormData(this);
             const data = {
-                nome: formData.get('nome'),
+                name: formData.get('name'),
                 email: formData.get('email'),
                 whatsapp: formData.get('whatsapp'),
-                timestamp: new Date().toISOString()
+                timestamp: new Date().toISOString(),
+                source: 'Mentoria - Landing Page'
             };
 
             // Google Forms Integration
